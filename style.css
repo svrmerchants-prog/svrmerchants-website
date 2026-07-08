@@ -1,1 +1,342 @@
-* { margin: 0; padding: 0; box-sizing: border-box; } /* GLOBAL */ body { background-color: #080808; color: #ffffff; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; line-height: 1.7; } html { scroll-behavior: smooth; } /* HEADER */ header { position: sticky; top: 0; z-index: 1000; width: 100%; padding: 18px 8%; display: flex; justify-content: space-between; align-items: center; background: rgba(8, 8, 8, 0.96); border-bottom: 1px solid rgba(201, 162, 39, 0.25); backdrop-filter: blur(10px); } /* LOGO */ .logo img { height: 65px; width: auto; display: block; } /* NAVIGATION */ nav a { color: #ffffff; text-decoration: none; margin-left: 30px; font-size: 0.95rem; letter-spacing: 1px; transition: 0.3s ease; } nav a:hover { color: #C9A227; } /* HERO */ .hero { min-height: 90vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 100px 10%; background: linear-gradient( rgba(8,8,8,0.90), rgba(8,8,8,1) ); } .hero-content { max-width: 950px; } .hero-tagline { color: #C9A227; font-size: .85rem; letter-spacing: 5px; margin-bottom: 25px; } .hero h1 { font-size: 4.5rem; letter-spacing: 10px; margin-bottom: 20px; } .hero h2 { font-size: 2rem; color: #C9A227; font-weight: 400; letter-spacing: 3px; margin-bottom: 30px; } .hero p { color: #d5d5d5; font-size: 1.15rem; max-width: 800px; margin: auto; } /* BUTTONS */ .hero-buttons { display: flex; justify-content: center; gap: 20px; margin-top: 40px; } button { background: transparent; color: #C9A227; border: 1px solid #C9A227; padding: 15px 40px; font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; cursor: pointer; transition: .3s ease; } button:hover { background: #C9A227; color: #080808; } .secondary-btn { color: #ffffff; border-color: #ffffff; } .secondary-btn:hover { background: #ffffff; color: #080808; } /* GENERAL SECTIONS */ section { padding: 90px 10%; text-align: center; } .section-label { color: #C9A227; font-size: .85rem; letter-spacing: 5px; margin-bottom: 20px; } section h2 { font-size: 2.8rem; letter-spacing: 4px; margin-bottom: 30px; color: #C9A227; } section p { max-width: 850px; margin: auto; color: #d5d5d5; font-size: 1.08rem; } /* BRAND SECTION */ .brand-card { margin-top: 50px; padding: 40px; border: 1px solid rgba(201,162,39,.25); } .brand-card h3 { font-size: 2rem; letter-spacing: 3px; margin-bottom: 15px; } /* VAULT79 */ .vault-section { min-height: 75vh; display: flex; justify-content: center; align-items: center; } .vault-content { max-width: 900px; } .vault-content h2 { font-size: 4rem; letter-spacing: 8px; } .vault-content h3 { color: #ffffff; font-size: 1.8rem; font-weight: normal; margin-bottom: 30px; } .vault-content p { margin-bottom: 25px; } /* FOOTER */ footer { text-align: center; padding: 35px; border-top: 1px solid rgba(201,162,39,.25); color: #888888; font-size: .9rem; } /* MOBILE */ @media(max-width:768px){ header { flex-direction: column; gap:20px; } .logo img { height:55px; } nav { text-align:center; } nav a { margin:0 10px; font-size:.8rem; } .hero h1 { font-size:2.8rem; letter-spacing:5px; } .hero h2 { font-size:1.4rem; } .hero-buttons { flex-direction:column; } section { padding:60px 5%; } }
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* GLOBAL */
+
+body {
+background-color: #080808;
+color: #ffffff;
+font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+line-height: 1.7;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+width: 100%;
+padding: 18px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: rgba(8, 8, 8, 0.96);
+border-bottom: 1px solid rgba(201, 162, 39, 0.25);
+backdrop-filter: blur(10px);
+}
+
+/* LOGO */
+
+.logo img {
+height: 65px;
+width: auto;
+display: block;
+}
+
+/* NAVIGATION */
+
+nav a {
+color: #ffffff;
+text-decoration: none;
+margin-left: 30px;
+font-size: .95rem;
+letter-spacing: 1px;
+transition: .3s ease;
+}
+
+nav a {
+color: #C9A227;
+}
+
+/* HERO */
+
+.hero {
+min-height: 90vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 100px 10%;
+background:
+linear-gradient(
+rgba(8,8,8,.88),
+rgba(8,8,8,1)
+);
+}
+
+.hero-content {
+max-width: 950px;
+}
+
+.hero-tagline {
+color: #C9A227;
+font-size: .85rem;
+letter-spacing: 5px;
+margin-bottom: 25px;
+}
+
+.hero h1 {
+font-size: 4.5rem;
+letter-spacing: 10px;
+margin-bottom: 20px;
+}
+
+.hero h2 {
+font-size: 2rem;
+color:#C9A227;
+font-weight:400;
+letter-spacing:3px;
+margin-bottom:30px;
+}
+
+.hero p {
+color:#d5d5d5;
+font-size:1.15rem;
+max-width:800px;
+margin;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+display;
+justify-content;
+gap:20px;
+margin-top:40px;
+}
+
+button {
+background;
+color:#C9A227;
+border:1px solid #C9A227;
+padding:15px 40px;
+font-size:1rem;
+letter-spacing:2px;
+text-transform;
+cursor;
+transition:.3s ease;
+}
+
+button {
+background:#C9A227;
+color:#080808;
+}
+
+.secondary-btn {
+color:#ffffff;
+border-color:#ffffff;
+}
+
+.secondary-btn {
+background:#ffffff;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+padding:90px 10%;
+text-align;
+}
+
+.section-label {
+color:#C9A227;
+font-size:.85rem;
+letter-spacing:5px;
+margin-bottom:20px;
+}
+
+section h2 {
+font-size:2.8rem;
+letter-spacing:4px;
+margin-bottom:30px;
+color:#C9A227;
+}
+
+section p {
+max-width:850px;
+margin;
+color:#d5d5d5;
+font-size:1.08rem;
+}
+
+/* FEATURED SIGNATURE PRODUCT */
+
+.signature-feature {
+background:
+radial-gradient(
+circle,
+rgba(201,162,39,.12),
+transparent 45%
+);
+}
+
+.featured-product {
+margin-top:60px;
+display;
+align-items;
+justify-content;
+gap:70px;
+}
+
+.featured-product img {
+width:420px;
+max-width:100%;
+filter(0 25px 35px rgba(0,0,0,.8));
+}
+
+.featured-text {
+max-width:450px;
+text-align;
+}
+
+.featured-text h3 {
+font-size:2rem;
+letter-spacing:3px;
+margin-bottom:20px;
+}
+
+.featured-text p {
+margin-bottom:30px;
+}
+
+/* BRAND SECTION */
+
+.brand-card {
+margin-top:50px;
+padding:40px;
+border:1px solid rgba(201,162,39,.25);
+}
+
+.brand-card h3 {
+font-size:2rem;
+letter-spacing:3px;
+}
+
+/* VAULT79 */
+
+.vault-section {
+min-height:75vh;
+display;
+justify-content;
+align-items;
+}
+
+.vault-content {
+max-width:900px;
+}
+
+.vault-content h2 {
+font-size:4rem;
+letter-spacing:8px;
+}
+
+.vault-content h3 {
+font-size:1.8rem;
+font-weight;
+margin-bottom:30px;
+}
+
+.vault-content p {
+margin-bottom:25px;
+}
+
+/* PRODUCT COLLECTION */
+
+.product-grid {
+margin-top:60px;
+display;
+grid-template-columns(3,1fr);
+gap:35px;
+}
+
+.product-card {
+border:1px solid rgba(201,162,39,.25);
+padding:25px;
+transition:.3s ease;
+}
+
+.product-card {
+transform(-8px);
+border-color:#C9A227;
+}
+
+.product-card img {
+width:100%;
+height:320px;
+object-fit;
+margin-bottom:25px;
+}
+
+.product-card h3 {
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+.product-card p {
+font-size:.95rem;
+}
+
+/* FOOTER */
+
+footer {
+text-align;
+padding:35px;
+border-top:1px solid rgba(201,162,39,.25);
+color:#888;
+font-size:.9rem;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+header {
+    flex-direction:column;
+    gap:20px;
+}
+
+
+nav {
+    text-align:center;
+}
+
+
+nav a {
+    margin:0 10px;
+}
+
+
+.hero h1 {
+    font-size:2.8rem;
+    letter-spacing:5px;
+}
+
+
+.featured-product {
+    flex-direction:column;
+}
+
+
+.featured-text {
+    text-align:center;
+}
+
+
+.product-grid {
+    grid-template-columns:1fr;
+}
+
+
+section {
+    padding:60px 5%;
+}
+
+}
